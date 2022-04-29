@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import chat from "../../Assets/Projects/chat.png";
-import calculator from "../../Assets/Projects/calculator.png";
-import menuweb from "../../Assets/Projects/menuweb.png";
+import twit from "../../Assets/Projects/twit.png";
+import exploit from "../../Assets/Projects/exploit.png";
 import name from "../../Assets/Projects/name.png";
-import todo from "../../Assets/Projects/todo.png";
+import gify from "../../Assets/Projects/gify.png";
 import weather from "../../Assets/Projects/weather.png";
 
 function Projects() {
@@ -26,18 +26,30 @@ function Projects() {
               imgPath={chat}
               isBlog={false}
               title="ChatApp"
-              description="A real-time chat application built with ReactJS, NodeJS and Socket.io with a lots of special features like the integration of emojis and a group chat feature as well."
+              description="A real-time chat application built with ReactJS, NodeJS and Socket.io with a lots of special features like the integration of emojis and also the room feature where a bunch of people can chat all together."
               link="https://github.com/aman-raza/ChatApp"
             />
           </Col>
 
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={menuweb}
+              imgPath={exploit}
               isBlog={false}
-              title="Menu Website"
-              description="A website for a restaurant that has a menu with an integration of category wise distribution which will help people explore menu according to their preferences a menu webpage with different menus in it."
-              link="https://github.com/aman-raza/react-website"
+              title="Exploit"
+              description="A simple python script for the exploitation of vulnerable softwares using buffer overflow method."
+              link="https://github.com/aman-raza/Exploit"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={twit}
+              isBlog={false}
+              title="TwitScript"
+              description="A simple script that fetches tweets of a specified hashtag or location."
+              link="https://github.com/aman-raza/TwitScript"
             />
           </Col>
 
@@ -46,40 +58,32 @@ function Projects() {
               imgPath={name}
               isBlog={false}
               title="Name"
-              description="A simple name generator that will generate a random name according to the user's input, even if a user put a single letter in the search bar it will suggest all the word using a special builtin library."
+              description="A simple name generator that will generate a random name according to the user's input, even if a user put a single letter in the search bar it will suggest all the words using a special built-in library."
               link="https://github.com/aman-raza/name"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={todo}
+              imgPath={gify}
               isBlog={false}
-              title="ToDo App"
-              description="A simple todo application that will help you to keep track of your tasks and also will help you to keep track of your daily activities with all the CRUD operations."
-              link="https://github.com/aman-raza/react-todo"
+              title="GifySearch"
+              description="A gif search page made using simple api fetching method, simple interface for type and search work, one just have to type what they want."
+              link="https://github.com/aman-raza/GiphySearch"
             />
           </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={weather}
               isBlog={false}
               title="Weather App"
-              description="A simple weather application that will help you to keep track of the weather of your city and also will help you to keep track of the weather of your city according to your location with all details like sunset, humidity, pressure and spped with graphical representation of each details also a representaion of image for the feel of the weather."
+              description="A simple weather application that will help you to keep track of the weather of your city according to your location with all the details including sunset, humidity, pressure and wind speed."
               link="https://github.com/aman-raza/react-weather-app"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={calculator}
-              isBlog={false}
-              title="Calculator"
-              description="A simple calculator that will help you to perform basic operations like addition, subtraction, multiplication and division with all the mathematical operations with a lot of features."
-              link="https://github.com/aman-raza/react-calculator"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
